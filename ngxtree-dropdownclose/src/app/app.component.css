@@ -1,0 +1,115 @@
+.ngx-tree {
+    width: 620px;
+    display: inline-flex;
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .ngx-tree .ngx-tree-left {
+    width: 60%;
+    padding: 0 10px 10px; 
+    
+  }
+  .ngx-tree .ngx-tree-right {
+    border: 1px solid #e4e4e4;
+    padding: 0;
+    position: relative;
+  }
+  .ngx-tree .ngx-tree-right p {
+    background: rgba(234, 230, 230, 0.6);
+    color: #424344;
+    margin: 0px 0 10px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    
+  }
+  .ngx-tree .ngx-tree-right ul {
+    list-style: none;
+    border: none;
+    padding-left:10px;
+  }
+  .ngx-tree .ngx-tree-right ul li {
+    float: none;
+    padding: 2px 5px;
+    margin: 2px;
+    border: 1px solid rgb(220, 217, 217);
+    background: rgb(251, 251, 251);
+  }
+  .ngx-tree .ngx-tree-right ul li img{
+    float:right;
+    width: 16px;
+    margin-top: 2px;
+  }
+  .ngx-tree .ngx-tree-right .clearAll{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+  .dropdown-menu {
+    padding: 0px;
+  }
+  /* #app-details-view {
+    position: relative;
+  } */
+  .app-custom-dropdown {
+    /* float: left;
+    position: absolute;
+    top: 2px;
+    z-index: 9;
+    left: 168px; */
+    display: inline-flex;
+  }
+  .app-custom-dropdown ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #e5e5e5;
+  }
+  .app-custom-dropdown ul li {
+    float: left;
+  }
+
+  .app-custom-dropdown ul li label{
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+    color:#333;
+  }
+  .app-custom-dropdown ul li select{
+    border:none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color:#3399CC;
+  }
+
+  .app-custom-dropdown ul li select:focus{
+    outline: none;
+    box-shadow:none;
+  }
+  .app-custom-dropdown ul li .d-inline-block button {
+    background: transparent;
+    padding: 10px 10px 6px;
+    margin-right: 5px;
+    color:#3399CC;
+    border:none;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .app-custom-dropdown button:focus{
+    outline: none;
+  }
+
+  .btn-group{
+    padding-top:10px;
+    border-top:1px solid rgba(234, 230, 230, 0.6);
+    background: rgba(234, 230, 230, 0.6);
+  }
+  .btn-group label{ 
+    padding-top: 0px!important;
+    font-style: italic;
+  }
+
+
+  
