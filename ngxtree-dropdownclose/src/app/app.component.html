@@ -6,7 +6,7 @@
     <div class="ngx-tree">
       <div class="ngx-tree-left col-6">
         <!-- <ngx-treeview [items]="items | ngxTreeview:'name'" [itemTemplate]="itemTemplate" [config]="config" -->
-         <ngx-treeview [items]="items" [itemTemplate]="itemTemplate" [config]="config"             
+         <ngx-treeview [items]="items" [itemTemplate]="itemTemplate" [config]="config"
        
           (selectedChange)="onSelectedChange($event)">
         </ngx-treeview>
@@ -22,6 +22,34 @@
     </div>
    
   </div>
+</div>
+
+
+  <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">{{row.length}} selected {{secoundryLabel}}
+  </button>
+  <hr>
+  <div id="collapseBasic" [collapse]="isCollapsed" class="card card-block card-header">
+    <div aria-labelledby="dropdownBasic2" (click)="$event.stopPropagation()">
+      <div class="ngx-tree">
+        <div class="ngx-tree-left col-6">
+          <!-- <ngx-treeview [items]="items | ngxTreeview:'name'" [itemTemplate]="itemTemplate" [config]="config" -->
+          <ngx-treeview [items]="items" [itemTemplate]="itemTemplate" [config]="config"
+
+                        (selectedChange)="onSelectedChange($event)">
+          </ngx-treeview>
+        </div>
+        <div class="ngx-tree-right col-6 ">
+          <p>Selections</p>
+          <ul>
+            <li *ngFor="let i of row">{{i.text}}
+              <img src="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+
 </div>
 </div>
 </div>

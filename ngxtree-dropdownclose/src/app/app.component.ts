@@ -8,6 +8,7 @@ import { TreeviewItem, TreeviewConfig, TreeviewComponent, DownlineTreeviewItem }
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  isCollapsed = true;
   title = 'ngxtree-dropdownclose';
   myCheck: boolean = false;
   @ViewChild(TreeviewComponent) treeviewComponent: TreeviewComponent; 
