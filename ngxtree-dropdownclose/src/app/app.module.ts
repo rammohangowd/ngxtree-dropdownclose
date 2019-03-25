@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TreeviewModule } from 'ngx-treeview';
+import { CollapseModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { TreeviewModule } from 'ngx-treeview';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    CollapseModule.forRoot(),
     TreeviewModule.forRoot()
 
   ],
